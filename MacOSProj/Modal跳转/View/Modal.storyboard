@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Mhg-oV-gzz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Modal跳转-->
+        <scene sceneID="lwY-aI-cEo">
+            <objects>
+                <viewController title="Modal跳转" id="Mhg-oV-gzz" sceneMemberID="viewController">
+                    <view key="view" id="ciV-G1-klZ">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="26p-Ps-rMP">
+                                <rect key="frame" x="142" y="133" width="166" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="4fy-js-9fU"/>
+                                    <constraint firstAttribute="height" constant="20" id="Yvv-Xe-3gr"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Modal跳转到其它界面" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0Em-wf-n1l">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="KPS-PX-1Nr" kind="modal" id="fvh-3k-U8x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="26p-Ps-rMP" firstAttribute="centerX" secondItem="ciV-G1-klZ" secondAttribute="centerX" id="Twx-sA-8wY"/>
+                            <constraint firstItem="26p-Ps-rMP" firstAttribute="centerY" secondItem="ciV-G1-klZ" secondAttribute="centerY" id="lOg-sg-qCr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="RBi-Cp-dOF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166" y="188"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6wX-lo-QGO">
+            <objects>
+                <viewController id="KPS-PX-1Nr" sceneMemberID="viewController">
+                    <view key="view" id="VzJ-NN-vPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lno-5O-pZl">
+                                <rect key="frame" x="196" y="142" width="58" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="QNl-r5-d56"/>
+                                    <constraint firstAttribute="height" constant="16" id="xsh-zh-per"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="跳转成功" id="rZu-LY-F4U">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Lno-5O-pZl" firstAttribute="centerX" secondItem="VzJ-NN-vPJ" secondAttribute="centerX" id="gEm-RX-alx"/>
+                            <constraint firstItem="Lno-5O-pZl" firstAttribute="centerY" secondItem="VzJ-NN-vPJ" secondAttribute="centerY" id="uRM-E6-GLB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="Lda-Dg-o9T" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="188"/>
+        </scene>
+    </scenes>
+</document>

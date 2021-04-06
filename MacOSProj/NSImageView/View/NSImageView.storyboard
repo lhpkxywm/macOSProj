@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="JXi-6D-ffC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NSImageView-->
+        <scene sceneID="VPT-qf-5ZE">
+            <objects>
+                <viewController title="NSImageView" storyboardIdentifier="NSImageViewController" id="JXi-6D-ffC" customClass="NSImageViewController" customModule="MacOSProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="69o-58-7N8">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FUh-MB-lz4">
+                                <rect key="frame" x="20" y="240" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="topLeft" image="userIcon" id="6Su-Fz-HVb"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bqZ-Jx-QUo">
+                                <rect key="frame" x="68" y="240" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="top" image="userIcon" id="4h6-dO-1n7"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CoA-h4-w8x">
+                                <rect key="frame" x="116" y="240" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="topRight" image="userIcon" id="nRx-rh-Nus"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMi-tG-YaQ">
+                                <rect key="frame" x="20" y="192" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" image="userIcon" id="xRw-BC-2Ez"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOE-qi-HC0">
+                                <rect key="frame" x="68" y="192" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="userIcon" id="znS-by-ija"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="loB-JT-OnB">
+                                <rect key="frame" x="116" y="192" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="right" image="userIcon" id="G1G-I4-FId"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Wk-Yv-9ce">
+                                <rect key="frame" x="20" y="144" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="bottomLeft" image="userIcon" id="YEH-26-Mhk"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uJk-11-Bgx">
+                                <rect key="frame" x="68" y="144" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="bottom" image="userIcon" id="maW-Dz-AKN"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ga-KC-RxM">
+                                <rect key="frame" x="116" y="144" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="bottomRight" image="userIcon" id="JeX-3b-X7L"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ICI-RR-Ygx">
+                                <rect key="frame" x="165" y="171" width="120" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="pikachu_h" id="Pnq-Je-Sr5"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="leftBottomImgView" destination="0Wk-Yv-9ce" id="Isy-PA-BzE"/>
+                        <outlet property="leftCenterImgView" destination="GMi-tG-YaQ" id="EbN-e2-7kO"/>
+                        <outlet property="leftTopImgView" destination="FUh-MB-lz4" id="7EX-Pd-yiC"/>
+                        <outlet property="midBottomImgView" destination="uJk-11-Bgx" id="DRf-1q-jPp"/>
+                        <outlet property="midCenterImgView" destination="gOE-qi-HC0" id="vWJ-fu-uhn"/>
+                        <outlet property="midTopImgView" destination="bqZ-Jx-QUo" id="htd-Oh-iPV"/>
+                        <outlet property="rightBottomImgView" destination="4Ga-KC-RxM" id="5Ed-DC-ift"/>
+                        <outlet property="rightCenterImgView" destination="loB-JT-OnB" id="4P3-e2-m67"/>
+                        <outlet property="rightTopImgView" destination="CoA-h4-w8x" id="Xio-r4-SdZ"/>
+                    </connections>
+                </viewController>
+                <customObject id="9Wk-ml-xvf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-318" y="191"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pikachu_h" width="2052" height="1532"/>
+        <image name="userIcon" width="60.5" height="60.5"/>
+    </resources>
+</document>

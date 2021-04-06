@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="fXM-cv-hse">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NSSlider-->
+        <scene sceneID="Xhi-Wf-wyQ">
+            <objects>
+                <viewController title="NSSlider" storyboardIdentifier="NSSliderController" id="fXM-cv-hse" customClass="NSSliderController" customModule="MacOSProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="bi1-UL-Mfe">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jE8-ZS-jAY">
+                                <rect key="frame" x="18" y="254" width="96" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="5nr-iL-cUJ">
+                                    <connections>
+                                        <action selector="horzValueChange:" target="fXM-cv-hse" id="c9w-W0-VBc"/>
+                                    </connections>
+                                </sliderCell>
+                            </slider>
+                            <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QJ9-NR-2Hm">
+                                <rect key="frame" x="54" y="158" width="24" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="QCi-hd-cVO"/>
+                                <connections>
+                                    <action selector="vertValueChange:" target="fXM-cv-hse" id="beU-xV-uIU"/>
+                                </connections>
+                            </slider>
+                            <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-NM-EaI">
+                                <rect key="frame" x="52" y="126" width="28" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" alignment="left" maxValue="100" allowsTickMarkValuesOnly="YES" sliderType="circular" id="Vyv-b5-e42"/>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kiw-MS-UlS">
+                                <rect key="frame" x="175" y="262" width="101" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="HorzSliderValue" id="Xjj-Lc-WAA">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="31L-gs-vD9">
+                                <rect key="frame" x="176" y="200" width="98" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="VertSliderValue" id="9Il-LV-cRT">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BG9-e7-ZoY">
+                                <rect key="frame" x="177" y="125" width="96" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="Eng-h9-1vK" customClass="DiySliderCell" customModule="MacOSProj" customModuleProvider="target"/>
+                            </slider>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="circleSlider" destination="bDq-NM-EaI" id="QcQ-go-7gk"/>
+                        <outlet property="horzSlider" destination="jE8-ZS-jAY" id="Buc-rB-Tmi"/>
+                        <outlet property="horzValueLabel" destination="kiw-MS-UlS" id="MgX-nT-v8i"/>
+                        <outlet property="vertSlider" destination="QJ9-NR-2Hm" id="vdl-lw-L3G"/>
+                        <outlet property="vertValueLabel" destination="31L-gs-vD9" id="EAT-uU-95h"/>
+                    </connections>
+                </viewController>
+                <customObject id="dm2-zi-FXk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="143"/>
+        </scene>
+    </scenes>
+</document>

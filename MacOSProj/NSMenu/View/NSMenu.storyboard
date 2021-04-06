@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="I06-6h-CJ6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NSMenu-->
+        <scene sceneID="VKM-f3-37t">
+            <objects>
+                <viewController title="NSMenu" id="I06-6h-CJ6" customClass="NSMenuController" customModule="MacOSProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="pO1-FM-2t6">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RpS-Es-l5g">
+                                <rect key="frame" x="13" y="253" width="114" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="点击选择操作" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MRw-0l-y30">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="handleBtnClick:" target="I06-6h-CJ6" id="ago-en-YaD"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-1f-r1m">
+                                <rect key="frame" x="168" y="253" width="114" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="右键弹出列表" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cbG-6v-bQm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4T-bJ-lGj">
+                                <rect key="frame" x="13" y="221" width="74" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="主菜单" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1qH-rQ-s1p">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="mainMenuBtnClick:" target="I06-6h-CJ6" id="mgy-rd-YA7"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="of3-XS-Ss9">
+                                <rect key="frame" x="168" y="221" width="101" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="故事板菜单" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KZN-Ci-FjB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <outlet property="menu" destination="g2M-nQ-nbA" id="cHs-B9-TY2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="handleBtn" destination="RpS-Es-l5g" id="Jy6-o2-mvc"/>
+                        <outlet property="listBtn" destination="Asf-1f-r1m" id="bVA-rf-yzs"/>
+                        <outlet property="sbMenu" destination="g2M-nQ-nbA" id="k8O-v4-2ym"/>
+                    </connections>
+                </viewController>
+                <customObject id="mds-aL-166" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu id="g2M-nQ-nbA">
+                    <items>
+                        <menuItem title="菜单项1" id="oQa-C3-cet">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="menuItemClick:" target="I06-6h-CJ6" id="nhm-Jq-XYN"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="菜单项2" id="oqy-b6-OqI">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="menuItemClick:" target="I06-6h-CJ6" id="VtC-2K-MTD"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="菜单项3" id="4ae-A3-3P0">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="menuItemClick:" target="I06-6h-CJ6" id="Z0A-3v-Ers"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
+            </objects>
+            <point key="canvasLocation" x="-244" y="179"/>
+        </scene>
+    </scenes>
+</document>

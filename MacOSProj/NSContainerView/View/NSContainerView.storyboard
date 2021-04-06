@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="kyc-Kd-jLM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NSContainerView-->
+        <scene sceneID="OdM-eP-lsG">
+            <objects>
+                <viewController title="NSContainerView" storyboardIdentifier="NSContainerViewController" id="kyc-Kd-jLM" customClass="NSContainerViewController" customModule="MacOSProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="mnM-NB-Lim">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-FA-LGm">
+                                <rect key="frame" x="75" y="50" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7xb-Id-0u6"/>
+                                    <constraint firstAttribute="height" constant="200" id="XiI-Ev-Ta8"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Etr-6k-uBu" kind="embed" id="ixb-oJ-ThO"/>
+                                </connections>
+                            </containerView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ki6-8k-PS5">
+                                <rect key="frame" x="68" y="253" width="79" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8ba-s8-KU3"/>
+                                    <constraint firstAttribute="width" constant="65" id="qk3-e0-d7O"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="LeftBtn" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pS5-Ng-hWK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="leftBtnClick:" target="kyc-Kd-jLM" id="4MJ-yz-Btw"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rSZ-tG-SXT">
+                                <rect key="frame" x="295" y="253" width="87" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="1RE-bg-L8L"/>
+                                    <constraint firstAttribute="height" constant="20" id="dT6-8n-qTu"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="RightBtn" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fsD-lS-JHP">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="rightBtnClick:" target="kyc-Kd-jLM" id="hmt-qx-LIe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Cb2-FA-LGm" firstAttribute="centerY" secondItem="mnM-NB-Lim" secondAttribute="centerY" id="2gL-f3-y63"/>
+                            <constraint firstItem="Cb2-FA-LGm" firstAttribute="top" secondItem="ki6-8k-PS5" secondAttribute="bottom" constant="10" id="LKT-bh-qsT"/>
+                            <constraint firstItem="Cb2-FA-LGm" firstAttribute="top" secondItem="rSZ-tG-SXT" secondAttribute="bottom" constant="10" id="Ttm-Zh-n8l"/>
+                            <constraint firstItem="rSZ-tG-SXT" firstAttribute="trailing" secondItem="Cb2-FA-LGm" secondAttribute="trailing" id="ggo-GI-egz"/>
+                            <constraint firstItem="ki6-8k-PS5" firstAttribute="leading" secondItem="Cb2-FA-LGm" secondAttribute="leading" id="tCS-UM-WvI"/>
+                            <constraint firstItem="Cb2-FA-LGm" firstAttribute="centerX" secondItem="mnM-NB-Lim" secondAttribute="centerX" id="v1f-fR-cxN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="Cb2-FA-LGm" id="Heo-dc-jVJ"/>
+                    </connections>
+                </viewController>
+                <customObject id="oeE-KN-v5i" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="158"/>
+        </scene>
+        <!--RightViewController-->
+        <scene sceneID="650-cE-uxl">
+            <objects>
+                <viewController title="RightViewController" storyboardIdentifier="RightViewController" id="5Bi-82-nei" sceneMemberID="viewController">
+                    <view key="view" id="04u-Ef-gdB">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fb0-Ah-vy4">
+                                <rect key="frame" x="198" y="142" width="54" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="hGn-Eg-l8N"/>
+                                    <constraint firstAttribute="width" constant="50" id="qxW-6I-Ioa"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="RightVC" id="sq7-XX-vZ4">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Fb0-Ah-vy4" firstAttribute="centerX" secondItem="04u-Ef-gdB" secondAttribute="centerX" id="Xpc-fb-kHM"/>
+                            <constraint firstItem="Fb0-Ah-vy4" firstAttribute="centerY" secondItem="04u-Ef-gdB" secondAttribute="centerY" id="mC4-U8-Fol"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="P6b-5X-0Qz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="517"/>
+        </scene>
+        <!--LeftViewController-->
+        <scene sceneID="ri2-hC-kaM">
+            <objects>
+                <viewController title="LeftViewController" storyboardIdentifier="LeftViewController" id="Etr-6k-uBu" sceneMemberID="viewController">
+                    <view key="view" id="oIE-tn-fMW">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f7C-ra-I82">
+                                <rect key="frame" x="202" y="142" width="46" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="ZHi-8S-gTg"/>
+                                    <constraint firstAttribute="height" constant="16" id="rxs-dU-PYU"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="LeftVC" id="3HL-hd-n2f">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="f7C-ra-I82" firstAttribute="centerX" secondItem="oIE-tn-fMW" secondAttribute="centerX" id="6bg-MS-UfZ"/>
+                            <constraint firstItem="f7C-ra-I82" firstAttribute="centerY" secondItem="oIE-tn-fMW" secondAttribute="centerY" id="pBy-bZ-QYj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="srG-iq-3qe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168" y="158"/>
+        </scene>
+    </scenes>
+</document>
