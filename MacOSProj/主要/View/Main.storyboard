@@ -906,6 +906,17 @@
                                     <segue destination="qzs-SQ-UFy" kind="modal" id="xjw-YQ-UJz"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iF3-u0-Iuc">
+                                <rect key="frame" x="366" y="135" width="118" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="NSOpenPanel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jhJ-c4-qsg">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="6Cm-8m-1q2" kind="modal" id="ckq-nj-oyf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="AFp-yH-Doo" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="0oG-xz-jmm"/>
@@ -946,6 +957,14 @@
                 <customObject id="3cZ-23-hBx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-20" y="1015"/>
+        </scene>
+        <!--NSOpenPanel-->
+        <scene sceneID="RMW-hy-dbs">
+            <objects>
+                <controllerPlaceholder storyboardName="NSOpenPanel" id="6Cm-8m-1q2" sceneMemberID="viewController"/>
+                <customObject id="dCz-2r-Mpw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21" y="1077"/>
         </scene>
         <!--NSAlert-->
         <scene sceneID="vYR-jh-C5N">

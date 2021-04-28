@@ -53,8 +53,34 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VWP-1d-aYg">
+                                <rect key="frame" x="176" y="142" width="98" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="自定义Slider" id="qj2-n6-zQg">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRP-tc-q1e">
+                                <rect key="frame" x="20" y="20" width="89" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="PopoverSlider" id="rOF-LM-5FE">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="43o-wy-YnM">
+                                <rect key="frame" x="113" y="12" width="319" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="yhS-tI-guC"/>
+                                <connections>
+                                    <action selector="popoverSliderChange:" target="fXM-cv-hse" id="0XM-Cb-c7z"/>
+                                </connections>
+                            </slider>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BG9-e7-ZoY">
-                                <rect key="frame" x="177" y="125" width="96" height="28"/>
+                                <rect key="frame" x="278" y="134" width="154" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="Eng-h9-1vK" customClass="DiySliderCell" customModule="MacOSProj" customModuleProvider="target"/>
                             </slider>
@@ -64,6 +90,7 @@
                         <outlet property="circleSlider" destination="bDq-NM-EaI" id="QcQ-go-7gk"/>
                         <outlet property="horzSlider" destination="jE8-ZS-jAY" id="Buc-rB-Tmi"/>
                         <outlet property="horzValueLabel" destination="kiw-MS-UlS" id="MgX-nT-v8i"/>
+                        <outlet property="popoverSlider" destination="43o-wy-YnM" id="A2n-kC-jy3"/>
                         <outlet property="vertSlider" destination="QJ9-NR-2Hm" id="vdl-lw-L3G"/>
                         <outlet property="vertValueLabel" destination="31L-gs-vD9" id="EAT-uU-95h"/>
                     </connections>
@@ -71,6 +98,37 @@
                 <customObject id="dm2-zi-FXk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-380" y="143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4b8-IB-QaZ">
+            <objects>
+                <viewController storyboardIdentifier="SliderPopoverController" id="lHH-ZQ-Hg6" sceneMemberID="viewController">
+                    <view key="view" id="yrn-jC-27m">
+                        <rect key="frame" x="0.0" y="0.0" width="176" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JNa-n9-AGC">
+                                <rect key="frame" x="37" y="14" width="103" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="8ag-UC-QUg"/>
+                                    <constraint firstAttribute="width" constant="99" id="hVM-Dv-cRk"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="SliderValue" id="zpF-Fa-wUN">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="JNa-n9-AGC" firstAttribute="centerX" secondItem="yrn-jC-27m" secondAttribute="centerX" id="7th-8i-31a"/>
+                            <constraint firstItem="JNa-n9-AGC" firstAttribute="centerY" secondItem="yrn-jC-27m" secondAttribute="centerY" id="iX3-3S-bTh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="qgg-Sb-c7l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="271"/>
         </scene>
     </scenes>
 </document>

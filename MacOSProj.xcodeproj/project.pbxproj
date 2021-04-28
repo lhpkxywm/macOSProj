@@ -31,6 +31,10 @@
 		E728A2E62618A00900B962D7 /* NSTextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E728A2E52618A00900B962D7 /* NSTextView.storyboard */; };
 		E728A2F32618A03100B962D7 /* NSTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728A2F22618A03100B962D7 /* NSTextViewController.swift */; };
 		E728A2FD2618A13600B962D7 /* NSApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728A2FC2618A13600B962D7 /* NSApplicationController.swift */; };
+		E741E8A9262C3F3900D8F24C /* NSOpenPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741E8A8262C3F3900D8F24C /* NSOpenPanelController.swift */; };
+		E741E8AE262C3F4700D8F24C /* NSOpenPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E741E8AD262C3F4700D8F24C /* NSOpenPanel.storyboard */; };
+		E741E8BA262C414F00D8F24C /* NSStatusBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E741E8B9262C414F00D8F24C /* NSStatusBar.storyboard */; };
+		E741E8BF262C417E00D8F24C /* NSStatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741E8BE262C417E00D8F24C /* NSStatusBarController.swift */; };
 		E7546FBA261A828A0064A601 /* NSSlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7546FB9261A828A0064A601 /* NSSlider.storyboard */; };
 		E7546FBF261A829E0064A601 /* NSSliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7546FBE261A829E0064A601 /* NSSliderController.swift */; };
 		E7546FC4261A87FF0064A601 /* DiySliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7546FC3261A87FF0064A601 /* DiySliderCell.swift */; };
@@ -107,6 +111,10 @@
 		E728A2E52618A00900B962D7 /* NSTextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NSTextView.storyboard; sourceTree = "<group>"; };
 		E728A2F22618A03100B962D7 /* NSTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextViewController.swift; sourceTree = "<group>"; };
 		E728A2FC2618A13600B962D7 /* NSApplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSApplicationController.swift; sourceTree = "<group>"; };
+		E741E8A8262C3F3900D8F24C /* NSOpenPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSOpenPanelController.swift; sourceTree = "<group>"; };
+		E741E8AD262C3F4700D8F24C /* NSOpenPanel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NSOpenPanel.storyboard; sourceTree = "<group>"; };
+		E741E8B9262C414F00D8F24C /* NSStatusBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NSStatusBar.storyboard; sourceTree = "<group>"; };
+		E741E8BE262C417E00D8F24C /* NSStatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStatusBarController.swift; sourceTree = "<group>"; };
 		E7546FB9261A828A0064A601 /* NSSlider.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NSSlider.storyboard; sourceTree = "<group>"; };
 		E7546FBE261A829E0064A601 /* NSSliderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSliderController.swift; sourceTree = "<group>"; };
 		E7546FC3261A87FF0064A601 /* DiySliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiySliderCell.swift; sourceTree = "<group>"; };
@@ -199,6 +207,8 @@
 				E7D5BFF92619475C00B5F2C9 /* NSMenu */,
 				E7D5BFFD2619478700B5F2C9 /* NSContainerView */,
 				E7546FB5261A82770064A601 /* NSSlider */,
+				E741E89F262C3D7F00D8F24C /* NSOpenPanel */,
+				E741E8B5262C413C00D8F24C /* NSStausBar */,
 				D78545452569E791006B958C /* AppDelegate.swift */,
 				D78545492569E792006B958C /* Assets.xcassets */,
 				D785454E2569E792006B958C /* Info.plist */,
@@ -466,6 +476,72 @@
 			isa = PBXGroup;
 			children = (
 				E728A2E52618A00900B962D7 /* NSTextView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E741E89F262C3D7F00D8F24C /* NSOpenPanel */ = {
+			isa = PBXGroup;
+			children = (
+				E741E8A0262C3D7F00D8F24C /* Controller */,
+				E741E8A1262C3D7F00D8F24C /* Model */,
+				E741E8A2262C3D7F00D8F24C /* View */,
+			);
+			path = NSOpenPanel;
+			sourceTree = "<group>";
+		};
+		E741E8A0262C3D7F00D8F24C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E741E8A8262C3F3900D8F24C /* NSOpenPanelController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E741E8A1262C3D7F00D8F24C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E741E8A2262C3D7F00D8F24C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E741E8AD262C3F4700D8F24C /* NSOpenPanel.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E741E8B5262C413C00D8F24C /* NSStausBar */ = {
+			isa = PBXGroup;
+			children = (
+				E741E8B6262C413C00D8F24C /* Controller */,
+				E741E8B7262C413C00D8F24C /* Model */,
+				E741E8B8262C413C00D8F24C /* View */,
+			);
+			path = NSStausBar;
+			sourceTree = "<group>";
+		};
+		E741E8B6262C413C00D8F24C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E741E8BE262C417E00D8F24C /* NSStatusBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E741E8B7262C413C00D8F24C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E741E8B8262C413C00D8F24C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E741E8B9262C414F00D8F24C /* NSStatusBar.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -913,6 +989,7 @@
 				D78545F5256AB82E006B958C /* NSButtonProperty.png in Resources */,
 				E7D5C002261947E700B5F2C9 /* NSPopover.storyboard in Resources */,
 				E728A2E62618A00900B962D7 /* NSTextView.storyboard in Resources */,
+				E741E8AE262C3F4700D8F24C /* NSOpenPanel.storyboard in Resources */,
 				E75CC1EF2617FF23001ABBDB /* NSWindow.storyboard in Resources */,
 				E7546FBA261A828A0064A601 /* NSSlider.storyboard in Resources */,
 				E75CC20226182427001ABBDB /* NSApplication.storyboard in Resources */,
@@ -924,6 +1001,7 @@
 				E76D072C2616740B000AB680 /* NSCollectionView.storyboard in Resources */,
 				E7D5BFE32619389800B5F2C9 /* 智能引号@2x.png in Resources */,
 				E76D07162615ECCD000AB680 /* NSImageView.storyboard in Resources */,
+				E741E8BA262C414F00D8F24C /* NSStatusBar.storyboard in Resources */,
 				D78545822569F343006B958C /* Main.storyboard in Resources */,
 				D78545982569F82B006B958C /* Autolayout.storyboard in Resources */,
 				E7D5C0162619493D00B5F2C9 /* NSContainerView.storyboard in Resources */,
@@ -960,7 +1038,9 @@
 				E75CC1F9261801A8001ABBDB /* WindowViewController.swift in Sources */,
 				D78545462569E791006B958C /* AppDelegate.swift in Sources */,
 				E76D071E2615ED27000AB680 /* NSImageViewController.swift in Sources */,
+				E741E8BF262C417E00D8F24C /* NSStatusBarController.swift in Sources */,
 				D78545DB256AA271006B958C /* DiyView.swift in Sources */,
+				E741E8A9262C3F3900D8F24C /* NSOpenPanelController.swift in Sources */,
 				E728A2DD26188C9100B962D7 /* NSTextFieldController.swift in Sources */,
 				E76D074026167A57000AB680 /* CollectionViewItem.swift in Sources */,
 				D78545C5256A8F37006B958C /* NSViewDemoController.swift in Sources */,
